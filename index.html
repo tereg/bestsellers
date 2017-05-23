@@ -2,10 +2,18 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
   <title>Bestsellers</title>
 </head>
 <body>
-  <h1>NY Times Bestsellers</h1>
+  <div>
+    <h1>NY Times Bestsellers</h1>
+    <h2>Check out the top 5 books in each category!</h2>
+  </div>
+  <div id="books">
+  </div>
   <script src="main.js"></script>
   <script src="http://api.nytimes.com/svc/books/v3/lists/overview.jsonp?callback=getData&api-key=e73bc3306ae844a6ad0dcd00d197639b"></script>
 </body>
