@@ -60,6 +60,10 @@ ul {
   margin-right: 20px;
 }
 
+.card-footer:hover { 
+  background-color: #DCDCDC;
+}
+
 .description {
   font-size: 11px;
 }
