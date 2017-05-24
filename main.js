@@ -49,6 +49,3 @@ function getData(data) {
     $(this).children("ul").slideToggle("fast");
   })         
 }
-
-history.pushState(stateObject, "title", URL);
-
