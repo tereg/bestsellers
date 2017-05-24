@@ -45,6 +45,10 @@ function getData(data) {
   $('.weeks:contains("1 weeks on the list")').text("New this week"); 
 
   $(".card-footer").click(function() {
+    $("ul").hide();
     $(this).children("ul").slideToggle("fast");
   })         
 }
+
+history.pushState(stateObject, "title", URL);
+
