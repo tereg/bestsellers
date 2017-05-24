@@ -19,6 +19,12 @@ function getData(data) {
           '<p class="description card-text">' + data.results.lists[i].books[j].description + '</p>' +
         '</div>' +
         '<div class="card-footer">' +
+          '<ul>' + 
+            '<li>' + '<a href = "' + data.results.lists[i].books[j].buy_links[0].url + '">' + data.results.lists[i].books[j].buy_links[0].name + '</a>' + '</li>' +
+            '<li>' + '<a href = "' + data.results.lists[i].books[j].buy_links[1].url + '">' + data.results.lists[i].books[j].buy_links[1].name + '</a>' + '</li>' +
+            '<li>' + '<a href = "' + data.results.lists[i].books[j].buy_links[2].url + '">' + data.results.lists[i].books[j].buy_links[2].name + '</a>' + '</li>' +
+          '</ul>' + 
+          '<p>Buy</p>' + 
         '</div>' +
       '</div>'
       ;
@@ -36,5 +42,9 @@ function getData(data) {
   update.innerHTML = bestsellers;
 
   $('.weeks:contains("0 weeks on the list")').remove();
-  $('.weeks:contains("1 weeks on the list")').text("New this week")          
+  $('.weeks:contains("1 weeks on the list")').text("New this week"); 
+
+  $(".card-footer").click(function() {
+    $(this).children("ul").slideToggle("fast");
+  })         
 }

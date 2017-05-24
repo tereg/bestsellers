@@ -17,6 +17,16 @@ h1, h2 {
   color: #ecf0f1;
 }
 
+li {
+  font-size: 12px;
+}
+
+ul {
+  list-style: none;
+  display: none;
+  float: right;
+}
+
 .jumbotron {
   background: #bdc3c7; 
   background: -webkit-linear-gradient(bottom, #2c3e50, #bdc3c7);
