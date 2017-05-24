@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 54px;
+}
+
+h1, h2 {
+  margin-left: 20px;
+  font-family: 'Khula', sans-serif;
+  text-shadow: 2px 2px 2px black; 
+  color: #ecf0f1;
+}
+
+.jumbotron {
+  background: #bdc3c7; 
+  background: -webkit-linear-gradient(bottom, #2c3e50, #bdc3c7);
+  background: -o-linear-gradient(bottom, #2c3e50, #bdc3c7);
+  background: linear-gradient(to top, #2c3e50, #bdc3c7); 
+  color: white;
+  margin-bottom: 0;
+}   
+
+.category {
+  margin-left: 20px;
+  padding-top: 15px;
+}
+
+/* Book Info Styles */
+.author {
+  font-size: 13px;
+}
+
+.book-img {
+  padding-top: 5px;
+}
+
+.card-block {
+  padding-top: 5px;
+}
+
+.card-deck {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.description {
+  font-size: 11px;
+}
+
+.title {
+  font-size: 16px;
+  padding-top: -2px;
+}
+
+.weeks {
+  font-size: 10px;
+}
